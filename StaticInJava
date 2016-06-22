@@ -1,0 +1,46 @@
+class Bulb{
+    
+    int watts;
+    private boolean status;
+    static int bulbcount=0;
+    
+    static{
+    bulbcount=100;
+        
+    }
+    
+    Bulb(){
+    bulbcount++;}
+    
+    void setSwitch(boolean button){
+        
+        status = button;
+        
+    }
+    
+    void showBulbDetails(){
+        
+        System.out.println(watts);
+        if(status)
+        System.out.println("Bulb is on");
+        else
+        System.out.println("Bulb is off");
+        
+    }
+    
+}
+    class Main{
+        
+        public static void main(String args[]){
+            
+        Bulb bulb1 = new Bulb();
+        Bulb bulb2 = new Bulb();
+        
+        bulb1.watts=100;
+        bulb1.showBulbDetails();
+        System.out.println(Bulb.bulbcount);
+            
+        } 
+        
+        
+    }
