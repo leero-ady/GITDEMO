@@ -1,0 +1,14 @@
+public class NumbersHereAndThere2{
+ static int num=0;
+public static void main(String… args)
+{
+int num=5;
+iManipulateNums(num);
+System.out.println(num);
+}
+public static void iManipulateNums(int num)
+{
+num=9;
+num/=5;
+}
+}
